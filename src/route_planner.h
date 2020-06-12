@@ -28,6 +28,10 @@ class RoutePlanner {
 
     float distance = 0.0f;
     RouteModel &m_Model;
+  
+    static bool Compare(RouteModel::Node *current_node, RouteModel::Node *next_node);
+    static void CellSort(std::vector<RouteModel::Node*> *n);
+  
 };
 
 #endif
