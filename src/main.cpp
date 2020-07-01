@@ -30,7 +30,7 @@ static std::optional<std::vector<std::byte>> ReadFile(const std::string &path)
 /* Check if the four input coordinates are within specific range [0 100] */
 bool CheckRange(int start_x,int start_y, int end_x, int end_y)
 {
-  	return (start_x > 0 && start_x <=100 && start_y > 0 && start_y <=100 && end_x > 0 && end_x <=100 && end_y > 0 && end_y <=100 );
+  	return (start_x >= 0 && start_x <=100 && start_y >=0 && start_y <=100 && end_x >= 0 && end_x <=100 && end_y >= 0 && end_y <=100 );
 }
 
 int main(int argc, const char **argv)
